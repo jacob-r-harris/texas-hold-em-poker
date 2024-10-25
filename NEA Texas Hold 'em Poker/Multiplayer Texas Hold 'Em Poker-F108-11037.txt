@@ -1,0 +1,41 @@
+Multiplayer Texas Hold 'Em Poker with an AI and Real players.
+
+Objectives:
+	Get poker working /
+
+	Get multiplayer working /(kinda)
+	    Sending to a specific client /
+	    Possibly making a GUI to insure constant updates to messages / (No need for a gui, just stop being dumb)
+	    Can player a full round of poker through client windows /
+	    Error testing x
+
+	Get AI working / (kinda)
+        Get it recognise how many "OUTS" it has in a hand to see how good it is x
+
+
+CURRENT ISSUES:
+
+     AI ----------------------------------------------------------------------------------------------------------------
+     Cant distinguish if it contributes to the hand
+
+     Doesnt take into account how rare the hand is to come up
+
+     need to fix how it finds straight flushes and pairs:
+        if there is a straight and a flush in the hand, it'll assume there's a straight flush, which is untrue
+        it only sees pairs that it already has
+
+     if it doesn't have enough money to raise, it relies on chance that it wont try to raise again when prompted by the
+     server
+
+     It cant bet, bruh
+
+     Poker -------------------------------------------------------------------------------------------------------------
+
+    File "C:\Users\198591\OneDrive\College Work\Pycharm\NEA Texas Hold 'em Poker\hierarchy.py", line 235, in tie_breaker
+        high_card = thand[-1]
+    IndexError: list index out of range
+
+    when they have a pair, for some reason their hand contains no other cards and only just the pair flag
+    so, try and find out where the cards get lost, or try and re-gain the cards.
+
+    trouble recognising when a player does not have enough to raise

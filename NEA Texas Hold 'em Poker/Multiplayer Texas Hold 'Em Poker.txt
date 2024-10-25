@@ -1,0 +1,35 @@
+Multiplayer Texas Hold 'Em Poker with an AI and Real players.
+
+Objectives:
+	Get poker working /
+
+	Get multiplayer working /(kinda)
+	    Sending to a specific client /
+	    Possibly making a GUI to insure constant updates to messages / (No need for a gui, just stop being dumb)
+	    Can player a full round of poker through client windows /
+	    Error testing x
+
+	Get AI working / (kinda)
+        Get it recognise how many "OUTS" it has in a hand to see how good it is x
+
+
+CURRENT ISSUES:
+
+     AI ----------------------------------------------------------------------------------------------------------------
+     Cant distinguish if it contributes to the hand
+
+     Doesnt take into account how rare the hand is to come up
+
+     need to fix how it finds straight flushes and pairs:
+        if there is a straight and a flush in the hand, it'll assume there's a straight flush, which is untrue
+        it only sees pairs that it already has
+
+     if it doesn't have enough money to raise, it relies on chance that it wont try to raise again when prompted by the
+     server
+
+     Needs to know the minimum bet
+
+     Poker -------------------------------------------------------------------------------------------------------------
+     Pot roll over does not give the correct amount of money to the winner
+
+     Small blind somehow loses an extra amount thats determined by how much they put down as a small blind

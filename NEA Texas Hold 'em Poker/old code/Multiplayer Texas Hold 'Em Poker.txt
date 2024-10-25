@@ -1,0 +1,13 @@
+Multiplayer Texas Hold 'Em Poker with a learning AI and Real players.
+
+Objectives:
+	Get poker working /
+
+	Get multiplayer working x
+	    Sending to a specific client /
+	    Weird bug where it combines messages /
+
+	    host server sends info of the game to all players
+
+
+	Get AI working x
