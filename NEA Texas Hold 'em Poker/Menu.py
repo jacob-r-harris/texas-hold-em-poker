@@ -1,3 +1,5 @@
+import os
+
 print("Welcome To Poker!")
 print("Enter the letters listed below to perform their functions:")
 print("(P): Creates a host server")
